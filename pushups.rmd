@@ -20,9 +20,9 @@ require(tigerstats)
 
 Create an Rstudio project called pushups in your project folders directory. Using the dataset called pushups from the tigerstats package in R; answer the question posed by this null and alternate hypothesis in an html markdown document.
 
-$H_0$: There is no difference between the average number of pushups of line vs skill players
+$H_0$: There is no difference between the average number of pushups of line vs skill players done in two minutes.
 
-$H_A$: The average number of pushups of line players is statistically different than that of skill players.
+$H_A$: The average number of pushups done in two minues by line players is statistically different than that of skill players.
 
 submit that html file to canvas to complete this assignment.
 
@@ -48,8 +48,9 @@ a factor with levels LINE SKILL: type of position played by the subject. Line po
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
   
-Our variable analysis gives weight and pushups as numerical variables and position as a categorical variable.  The two variables of interest are number of pushups and position. Graphical displays would include boxplots as a first thing to look at.
-#Results
+Our variable analysis gives weight and pushups as numerical variables and position as a categorical variable.  The two variables of interest are number of pushups and position. Graphical displays would include boxplots as a first thing to look at.  
+
+# Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
@@ -64,7 +65,7 @@ Our variable analysis gives weight and pushups as numerical variables and positi
 boxplot(pushups~position,data=players,main="skill vs pushups")
 ```
   
-It appears that the skill players with the lowest average do more pushups than almost all the line players.  Visually they are very different.
+It appears, in the graphical results that the skill players with the lowest average do more pushups than almost all the line players in two minutes.  Visually they are very different.
  
 ### Numerical Descriptive Results
 ```{r}
@@ -85,9 +86,9 @@ t.test(pushups~position,data=players)
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
-The question was is there a difference in the average number of pushups players in the line and skill positions can do.
+The question was is there a difference in the average number of pushups players in the line and skill positions can do within two minutes.
 
-The null hypothesis is:$H_0$: There is no difference between the average number of pushups of line vs skill players
+The null hypothesis is:$H_0$: There is no difference between the average number of pushups of line vs skill players can do in 2 minutes.
 
 The box plot indicates a significant difference between the number of pushups the players in the two positions can do, the numerical summary shows the line players do an average of about 17 pushups and the skill players can do an average of about 50 pushups. 
 
